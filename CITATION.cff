@@ -1,0 +1,38 @@
+cff-version: "1.2.0"
+message: "If you use this software, please cite it as below."
+authors:
+  - family-names: Dakha
+    given-names: Suresh
+    affiliation: "Senior Solution Architect — Physical AI, Edge AI & OT Cybersecurity"
+    url: "https://linkedin.com/in/suresh-dakha"
+title: "ot-agent: Agentic OT asset classification and IEC 62443 control generation"
+abstract: >
+  Hybrid agentic pipeline for OT asset classification and IEC 62443 control
+  generation. Combines a deterministic rules engine (ot-asset-classifier) with
+  a local LLM fallback (Ollama/vLLM), three-tier control generation grounded
+  in IEC 62443 standard text via ChromaDB RAG, a multi-turn chat interface,
+  and a CSV/JSON batch pipeline. Designed for air-gapped operational technology
+  environments with zero external network calls.
+version: "1.0.0"
+date-released: "2026-05-27"
+url: "https://github.com/dakhasuresh/ot-agent"
+repository-code: "https://github.com/dakhasuresh/ot-agent"
+license: MIT
+keywords:
+  - OT security
+  - IEC 62443
+  - industrial cybersecurity
+  - SCADA
+  - PLC
+  - air-gap
+  - LLM agent
+  - RAG
+  - Purdue model
+  - risk scoring
+references:
+  - type: software
+    title: "ot-asset-classifier: Deterministic IEC 62443-aligned OT asset classification"
+    url: "https://github.com/dakhasuresh/ot-asset-classifier"
+    authors:
+      - family-names: Dakha
+        given-names: Suresh
