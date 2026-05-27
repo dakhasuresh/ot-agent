@@ -1,0 +1,62 @@
+{
+  "total": 6,
+  "deterministic": 5,
+  "llm_classified": 1,
+  "unmatched": 0,
+  "reports": [
+    {
+      "asset_id": "ASSET-001",
+      "classification": {
+        "device_type_input": "SIS",
+        "device_type_matched": "Safety Instrumented System (SIS)",
+        "manufacturer": "Triconex",
+        "model": "Tricon CX",
+        "purdue_level": "L1",
+        "iec62443_zone": "Safety",
+        "asset_category": "SAFETY_SYSTEM",
+        "confidence": 1.0,
+        "classification_path": "deterministic",
+        "matched_rule": "SIS",
+        "reasoning": null
+      },
+      "risk": {
+        "risk_score": 100,
+        "risk_band": "Critical",
+        "threat_score": 5,
+        "vulnerability_score": 4,
+        "impact_score": 5,
+        "applicable_threat_patterns": [
+          "TP-01: Nation-State APT — Critical Infrastructure Targeting",
+          "TP-08: Safety System Bypass — Zone Boundary Violation",
+          "TP-04: Supply Chain Compromise — Vendor Software/Firmware"
+        ],
+        "recommended_controls": [
+          {
+            "clause": "IEC 62443-3-2 §6.2",
+            "text": "Assign SL3 minimum to all safety zone assets; document SL assessment.",
+            "priority": 1,
+            "source": "zone_static",
+            "addresses_threat": null,
+            "rationale": null
+          },
+          {
+            "clause": "IEC 62443-3-3 SR 3.6",
+            "text": "SIS firmware changes require dual authorisation and written change record.",
+            "priority": 1,
+            "source": "category_static",
+            "addresses_threat": null,
+            "rationale": null
+          },
+          {
+            "clause": "IEC 62443-2-4 §SP.09.01",
+            "text": "Time-limit all vendor remote access sessions to SIS; terminate automatically after 4 hours.",
+            "priority": 1,
+            "source": "llm_contextual",
+            "addresses_threat": "TP-01",
+            "rationale": "Nation-state APTs targeting safety systems commonly exploit standing vendor access sessions."
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+.eggs/
+*.egg
+pip-wheel-metadata/
+.installed.cfg
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# ChromaDB — local vector store (built from your own IEC 62443 docs)
+knowledge/chroma_db/
+
+# IEC 62443 source documents — do not commit licensed standard text
+knowledge/docs/
+!knowledge/docs/.gitkeep
+
+# LLM / model weights
+*.gguf
+*.ggml
+*.bin
+*.safetensors
+
+# Reports and output files
+*.json
+*.csv
+!examples/sample_assets.csv
+!examples/sample_report.json
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# Pytest
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Environment
+.env
+.env.*
+!.env.example
+
+# Logs
+*.log
+logs/

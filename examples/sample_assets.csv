@@ -1,0 +1,7 @@
+asset_id,device_type,manufacturer,model,site,notes
+ASSET-001,SIS,Triconex,Tricon CX,Plant A,Safety shutdown system
+ASSET-002,PLC,Siemens,S7-1500,Plant A,Main process controller
+ASSET-003,SCADA Server,AVEVA,,Plant A,Supervisory system
+ASSET-004,Historian,OSIsoft,PI Server,Plant A,Process data historian
+ASSET-005,Jump Server,,, Plant A,OT privileged access workstation
+ASSET-006,Custom RTU Panel,,,Plant B,Unknown legacy panel — needs review
