@@ -1,5 +1,5 @@
 # ot-agent
-
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20408726.svg)](https://doi.org/10.5281/zenodo.20408726)
 [![Python 3.9+](https://img.shields.io/badge/python-3.9%2B-blue.svg)](https://www.python.org/)
 [![IEC 62443](https://img.shields.io/badge/standard-IEC%2062443-green.svg)](https://www.iec.ch/homepage)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
